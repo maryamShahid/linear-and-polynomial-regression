@@ -15,11 +15,9 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-!ls /content/gdrive/My\ Drive/ML_HW_2
-
-root = '/content/gdrive/My Drive/ML_HW_2'
-q2_features_csv_path = os.path.join(root, 'question-2-features.csv')
-q2_labels_csv_path = os.path.join(root, 'question-2-labels.csv')
+root = '/content/gdrive/My Drive/dataset'
+q2_features_csv_path = os.path.join(root, 'features.csv')
+q2_labels_csv_path = os.path.join(root, 'labels.csv')
 
 all_features = pd.read_csv(q2_features_csv_path).to_numpy()
 features = pd.read_csv(q2_features_csv_path, usecols=[12]).to_numpy()
